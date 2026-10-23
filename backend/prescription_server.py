@@ -1060,8 +1060,8 @@ def extract_with_paddleocr_api(image_path):
         "Authorization": f"bearer {PADDLE_OCR_TOKEN}",
     }
     optional_payload = {
-        "useDocOrientationClassify": False,
-        "useDocUnwarping": False,
+        "useDocOrientationClassify": True,
+        "useDocUnwarping": True,
         "useChartRecognition": False,
     }
 
@@ -1149,25 +1149,86 @@ def extract_with_paddleocr_api(image_path):
                 if pruned.get("height"):
                     doc_height = pruned["height"]
 
-                # 1. Parse structured layout blocks
+                # 1. Advanced Geometry Boxing Engine for layout blocks
                 for blk in pruned.get("parsing_res_list", []):
                     content = blk.get("block_content", "")
-                    bbox = blk.get("block_bbox", [0, 0, 100, 100])
-                    
-                    # Convert HTML table cells, paragraphs, breaks into readable lines
-                    clean_content = re.sub(r'</?(?:tr|p|div|li|h\d|br\s*/?)[^>]*>', '\n', content, flags=re.I)
-                    clean_content = re.sub(r'</?t[dh][^>]*>', ' | ', clean_content, flags=re.I)
-                    clean_content = re.sub(r'<[^>]+>', ' ', clean_content)
+                    bx1, by1, bx2, by2 = blk.get("block_bbox", [50, 50, 800, 200])
+                    b_w = max(bx2 - bx1, 80)
+                    b_h = max(by2 - by1, 40)
 
-                    for raw_l in clean_content.split('\n'):
-                        sl = re.sub(r'\s+', ' ', raw_l).strip(' |')
-                        if len(sl) > 1:
-                            ocr_lines.append(sl)
-                            ocr_tokens.append({
-                                "text": sl,
-                                "confidence": 0.97,
-                                "box": bbox
-                            })
+                    if "<table>" in content or "<tr>" in content:
+                        rows = re.findall(r'<tr[^>]*>[\s\S]*?</tr>', content, re.I)
+                        num_rows = max(len(rows), 1)
+                        row_h = b_h / num_rows
+
+                        for r_idx, row_html in enumerate(rows):
+                            row_y1 = int(by1 + r_idx * row_h)
+                            row_y2 = int(by1 + (r_idx + 1) * row_h)
+
+                            cells = re.findall(r'<t[dh][^>]*>[\s\S]*?</t[dh]>', row_html, re.I)
+                            col_offset = 0
+
+                            for c_idx, cell_html in enumerate(cells):
+                                m_col = re.search(r'colspan=["\']?(\d+)["\']?', cell_html, re.I)
+                                colspan = int(m_col.group(1)) if m_col else 1
+
+                                cell_x1 = int(bx1 + (col_offset / 4.0) * b_w)
+                                cell_x2 = int(bx1 + ((col_offset + colspan) / 4.0) * b_w)
+                                col_offset += colspan
+
+                                clean = re.sub(r'</?(?:p|div|li|h\d|br\s*/?)[^>]*>', '\n', cell_html, flags=re.I)
+                                clean = re.sub(r'<[^>]+>', ' ', clean)
+                                sub_lines = [re.sub(r'\s+', ' ', l).strip(' |') for l in clean.split('\n')]
+                                sub_lines = [l for l in sub_lines if len(l) > 0 and l != '|']
+                                if not sub_lines:
+                                    continue
+
+                                ocr_lines.append(' '.join(sub_lines))
+                                cell_h = max(row_y2 - row_y1, 18)
+                                sub_h = cell_h / len(sub_lines)
+
+                                for s_idx, sub_l in enumerate(sub_lines):
+                                    sy1 = int(row_y1 + s_idx * sub_h)
+                                    sy2 = int(row_y1 + (s_idx + 1) * sub_h)
+                                    ocr_tokens.append({
+                                        "text": sub_l,
+                                        "confidence": 0.98,
+                                        "box": [cell_x1 + 3, sy1 + 2, cell_x2 - 3, sy2 - 2]
+                                    })
+                    else:
+                        clean = re.sub(r'</?(?:p|div|li|h\d|br\s*/?)[^>]*>', '\n', content, flags=re.I)
+                        clean = re.sub(r'</?t[dh][^>]*>', ' | ', clean, flags=re.I)
+                        clean = re.sub(r'<[^>]+>', ' ', clean)
+                        raw_lines = [re.sub(r'\s+', ' ', l).strip(' |') for l in clean.split('\n')]
+                        raw_lines = [l for l in raw_lines if len(l) > 1 and l != '|']
+                        if not raw_lines:
+                            continue
+
+                        line_h = b_h / len(raw_lines)
+                        for l_idx, line_text in enumerate(raw_lines):
+                            ocr_lines.append(line_text)
+                            ly1 = int(by1 + l_idx * line_h)
+                            ly2 = int(by1 + (l_idx + 1) * line_h)
+
+                            parts = re.split(r'[:|]', line_text)
+                            if len(parts) > 1 and len(parts[0].strip()) > 2 and len(parts[1].strip()) > 2:
+                                mid_x = int(bx1 + b_w * 0.45)
+                                ocr_tokens.append({
+                                    "text": parts[0].strip(),
+                                    "confidence": 0.97,
+                                    "box": [bx1 + 3, ly1 + 2, mid_x - 3, ly2 - 2]
+                                })
+                                ocr_tokens.append({
+                                    "text": ' '.join(p.strip() for p in parts[1:]),
+                                    "confidence": 0.96,
+                                    "box": [mid_x + 3, ly1 + 2, bx2 - 3, ly2 - 2]
+                                })
+                            else:
+                                ocr_tokens.append({
+                                    "text": line_text,
+                                    "confidence": 0.96,
+                                    "box": [bx1 + 3, ly1 + 2, bx2 - 3, ly2 - 2]
+                                })
 
                 # 2. Supplementary check from Markdown text if blocks were empty
                 if not ocr_lines:

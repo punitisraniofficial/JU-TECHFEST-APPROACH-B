@@ -27,10 +27,12 @@ import {
   BookOpen,
   PenTool,
   Filter,
-  Search
+  Search,
+  BoxSelect
 } from 'lucide-react';
 import { PatientContext, PrescriptionDrug, SafetyAnalysisResult } from '../types';
 import { PATIENT_PROFILES } from '../data/mockData';
+import { extractWithGeometryBoxingEngine } from '../utils/geometryBoxingEngine';
 
 /* ================= 1. OVERRIDE WITH JUSTIFICATION MODAL ================= */
 interface OverrideModalProps {
@@ -366,7 +368,7 @@ export const PrescriptionUploadModal: React.FC<UploadModalProps> = ({
     drugs: PrescriptionDrug[];
     patient: PatientContext;
     ocrLines: string[];
-    ocrTokens: Array<{ text: string; confidence: number; box: number[] }>;
+    ocrTokens: Array<{ text: string; confidence: number; box: number[]; tag?: string }>;
     qwenReasoning: string;
     engine: string;
     processingTimeMs: number;
@@ -452,42 +454,11 @@ export const PrescriptionUploadModal: React.FC<UploadModalProps> = ({
   };
 
   const parsePaddleOcrBenchmarkResult = (lrObj: any, sid: string): ExtractedData => {
-    const lr = lrObj?.result?.layoutParsingResults?.[0];
-    const width = lr?.prunedResult?.width || 893;
-    const height = lr?.prunedResult?.height || 1263;
-    const ocrLines: string[] = [];
-    const ocrTokens: Array<{ text: string; confidence: number; box: number[] }> = [];
-
-    for (const blk of (lr?.prunedResult?.parsing_res_list || [])) {
-      const content = blk.block_content || '';
-      const bbox = blk.block_bbox || [50, 50, 800, 200];
-      const clean = content
-        .replace(/<\/?(?:tr|p|div|li|h\d|br\s*\/?)[^>]*>/gi, '\n')
-        .replace(/<\/?t[dh][^>]*>/gi, ' | ')
-        .replace(/<[^>]+>/g, ' ');
-
-      for (const rawLine of clean.split('\n')) {
-        const sl = rawLine.replace(/\s+/g, ' ').replace(/^[\s|]+|[\s|]+$/g, '');
-        if (sl.length > 1) {
-          ocrLines.push(sl);
-          ocrTokens.push({ text: sl, confidence: 0.97, box: bbox });
-        }
-      }
-    }
-
-    if (ocrLines.length === 0 && lr?.markdown?.text) {
-      const clean = lr.markdown.text
-        .replace(/<\/?(?:tr|p|div|li|h\d|br\s*\/?)[^>]*>/gi, '\n')
-        .replace(/<\/?t[dh][^>]*>/gi, ' | ')
-        .replace(/<[^>]+>/g, ' ');
-      for (const rawLine of clean.split('\n')) {
-        const sl = rawLine.replace(/\s+/g, ' ').replace(/^[\s|*#`]+|[\s|*#`]+$/g, '');
-        if (sl.length > 1) {
-          ocrLines.push(sl);
-          ocrTokens.push({ text: sl, confidence: 0.95, box: [60, 60, width - 60, 150] });
-        }
-      }
-    }
+    const geom = extractWithGeometryBoxingEngine(lrObj);
+    const width = geom.width;
+    const height = geom.height;
+    const ocrLines: string[] = geom.lines;
+    const ocrTokens = geom.tokens;
 
     const allText = ocrLines.join('\n');
     let drugs: PrescriptionDrug[] = [];
@@ -930,10 +901,20 @@ export const PrescriptionUploadModal: React.FC<UploadModalProps> = ({
                           onChange={(e) => setShowBoundingBoxes(e.target.checked)}
                           className="rounded text-[#087F5B] focus:ring-0"
                         />
-                        Bounding Boxes ({extractedData.ocrTokens.length})
+                        Geometry Boxes ({extractedData.ocrTokens.length})
                       </label>
                     )}
                   </div>
+
+                  {showBoundingBoxes && extractedData && extractedData.ocrTokens && extractedData.ocrTokens.length > 0 && (
+                    <div className="flex flex-wrap items-center gap-2 px-1 text-[9px] text-[#4A5D54]">
+                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-xs bg-emerald-500" /> Rx Drug</span>
+                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-xs bg-amber-500" /> Dose/Sig</span>
+                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-xs bg-rose-500" /> Warning</span>
+                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-xs bg-blue-500" /> Patient</span>
+                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-xs bg-purple-500" /> Diagnosis</span>
+                    </div>
+                  )}
 
                   <div className="relative border border-[#CBDAD4] rounded-lg overflow-hidden bg-white max-h-[380px] flex items-center justify-center">
                     <img
@@ -942,7 +923,7 @@ export const PrescriptionUploadModal: React.FC<UploadModalProps> = ({
                       className="w-full h-auto object-contain block"
                     />
 
-                    {/* PaddleOCR Bounding Boxes Overlay */}
+                    {/* PaddleOCR Geometry Bounding Boxes Overlay */}
                     {showBoundingBoxes && extractedData && extractedData.ocrTokens && extractedData.ocrTokens.map((tok, idx) => {
                       if (!tok.box || tok.box.length < 4) return null;
                       const [x1, y1, x2, y2] = tok.box;
@@ -954,19 +935,31 @@ export const PrescriptionUploadModal: React.FC<UploadModalProps> = ({
                       const width = (Math.abs(x2 - x1) / imgW) * 100;
                       const height = (Math.abs(y2 - y1) / imgH) * 100;
 
+                      const tagColorMap: Record<string, string> = {
+                        medication: 'border-emerald-500 bg-emerald-500/20 hover:bg-emerald-500/45 text-emerald-900',
+                        dosage: 'border-amber-500 bg-amber-500/20 hover:bg-amber-500/45 text-amber-900',
+                        warning: 'border-rose-500 bg-rose-500/30 hover:bg-rose-500/55 text-rose-900',
+                        patient: 'border-blue-500 bg-blue-500/20 hover:bg-blue-500/45 text-blue-900',
+                        diagnosis: 'border-purple-500 bg-purple-500/20 hover:bg-purple-500/45 text-purple-900',
+                        instruction: 'border-cyan-500 bg-cyan-500/20 hover:bg-cyan-500/45 text-cyan-900',
+                        clinical: 'border-teal-500 bg-teal-500/15 hover:bg-teal-500/35 text-teal-900'
+                      };
+                      const colorClass = tagColorMap[tok.tag || 'clinical'] || 'border-emerald-500 bg-emerald-500/20';
+
                       return (
                         <div
                           key={idx}
                           style={{
                             left: `${left}%`,
                             top: `${top}%`,
-                            width: `${Math.max(width, 3)}%`,
-                            height: `${Math.max(height, 2)}%`,
+                            width: `${Math.max(width, 2.5)}%`,
+                            height: `${Math.max(height, 1.8)}%`,
                           }}
-                          className="absolute border border-emerald-500 bg-emerald-500/15 pointer-events-auto hover:bg-emerald-500/40 hover:z-20 group transition-all"
+                          className={`absolute border pointer-events-auto hover:z-20 group transition-all rounded-[1px] ${colorClass}`}
                           title={`${tok.text} (${Math.round(tok.confidence * 100)}% conf)`}
                         >
                           <div className="hidden group-hover:block absolute bottom-full left-0 bg-[#172B25] text-white text-[9px] px-1.5 py-0.5 rounded shadow-md whitespace-nowrap z-30 pointer-events-none">
+                            <span className="font-bold uppercase tracking-wider text-emerald-300 mr-1">[{tok.tag || 'OCR'}]</span>
                             {tok.text} • {Math.round(tok.confidence * 100)}%
                           </div>
                         </div>
