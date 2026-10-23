@@ -1,0 +1,1807 @@
+{
+  "page_018": {
+    "logId": "2f6f1fa0-1f71-4343-a3dc-476a893d593f",
+    "result": {
+      "layoutParsingResults": [
+        {
+          "prunedResult": {
+            "page_count": null,
+            "width": 893,
+            "height": 1263,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_layout_detection": true,
+              "use_chart_recognition": false,
+              "use_seal_recognition": false,
+              "use_ocr_for_image_block": false,
+              "format_block_content": false,
+              "merge_layout_blocks": true,
+              "markdown_ignore_labels": [
+                "number",
+                "footnote",
+                "header",
+                "header_image",
+                "footer",
+                "footer_image",
+                "aside_text"
+              ],
+              "return_layout_polygon_points": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "header",
+                "block_content": "prescription_018.png — Prescription\nSource: ekacare/medical_records_parsing_validation_set / test / row 75",
+                "block_bbox": [
+                  68,
+                  72,
+                  551,
+                  113
+                ],
+                "block_id": 0,
+                "block_order": null,
+                "group_id": 0,
+                "block_polygon_points": [
+                  [
+                    68,
+                    72
+                  ],
+                  [
+                    551,
+                    72
+                  ],
+                  [
+                    551,
+                    113
+                  ],
+                  [
+                    68,
+                    113
+                  ]
+                ]
+              },
+              {
+                "block_label": "table",
+                "block_content": "<table><tr><td colspan=\"4\">Tel:</td></tr><tr><td colspan=\"3\"></td><td>ID No:</td></tr><tr><td colspan=\"2\">Patient:</td><td>Age:</td><td>Date: 22-Sep-23</td></tr><tr><td colspan=\"2\">Diagnosis:</td><td>Inflammatory Polyarthropathy (2012, Intermittent Arthritis-Ist Episode in 2012, Remission-2014-2022, Recent Episode since March 2023, B/L Secondary Knee OA, H/O Hysterectomy-2016.)</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td>Job/Job</td><td>FOLITRAX (oral)\n(Methotrexate 10 mg)</td><td>one tablet once in a week e.g every Sunday</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td>Tab</td><td>FOLVITE (oral)\n(Folic Acid 5 mg)</td><td>alternate day, avoid on methotrexate day</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td>Tab</td><td>TRITONIB (oral)\n(Tofacitinib 5 mg)</td><td>1 (breakfast) (lunch) (dinner)</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td>Tab</td><td>RETOZ (oral)\n(Etoricoxib 60 mg)</td><td>0 (breakfast) (lunch) (dinner)</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td>Tab</td><td>PANTADIF (oral)\n(Pantoprazole 40 mg)</td><td>1 (breakfast) (lunch) (dinner)</td><td>22-Sep-23 to 19-Dec-23</td></tr><tr><td colspan=\"2\"></td><td>Empty stomach</td><td></td></tr></table>",
+                "block_bbox": [
+                  150,
+                  258,
+                  782,
+                  620
+                ],
+                "block_id": 1,
+                "block_order": null,
+                "group_id": 1,
+                "block_polygon_points": [
+                  [
+                    150,
+                    258
+                  ],
+                  [
+                    782,
+                    258
+                  ],
+                  [
+                    782,
+                    620
+                  ],
+                  [
+                    150,
+                    620
+                  ]
+                ]
+              },
+              {
+                "block_label": "vision_footnote",
+                "block_content": "Recommendations:",
+                "block_bbox": [
+                  168,
+                  620,
+                  283,
+                  645
+                ],
+                "block_id": 2,
+                "block_order": null,
+                "group_id": 2,
+                "block_polygon_points": [
+                  [
+                    166.5303192138672,
+                    628.46337890625
+                  ],
+                  [
+                    281.7694091796875,
+                    617.5623779296875
+                  ],
+                  [
+                    283.7623291015625,
+                    638.630615234375
+                  ],
+                  [
+                    168.52325439453125,
+                    649.5316162109375
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "1. Physical exercises, as explained by physiotherapist, in addition to daily walk, swimming or gymnastics for at least 30 minutes",
+                "block_bbox": [
+                  173,
+                  607,
+                  772,
+                  688
+                ],
+                "block_id": 3,
+                "block_order": 1,
+                "group_id": 3,
+                "block_polygon_points": [
+                  [
+                    771,
+                    607
+                  ],
+                  [
+                    370,
+                    632
+                  ],
+                  [
+                    285,
+                    639
+                  ],
+                  [
+                    196,
+                    645
+                  ],
+                  [
+                    173,
+                    651
+                  ],
+                  [
+                    173,
+                    687
+                  ],
+                  [
+                    767,
+                    644
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "2. Repeat ESR, CRP, Hb, TLC, DLC, Platelets, SGPT, S.Creatinine, S. Cholesterol, Blood Sugar Random and Urine routine after 3 months (a week before the next follow-up review). The report must be signed by a MD qualified Pathologist with the Doctor's name and qualification clearly printed on it.",
+                "block_bbox": [
+                  175,
+                  647,
+                  774,
+                  750
+                ],
+                "block_id": 4,
+                "block_order": 2,
+                "group_id": 4,
+                "block_polygon_points": [
+                  [
+                    773,
+                    654
+                  ],
+                  [
+                    180,
+                    690
+                  ],
+                  [
+                    175,
+                    749
+                  ],
+                  [
+                    765,
+                    707
+                  ],
+                  [
+                    773,
+                    701
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Followup: on 19/12/2023 with prior appointment.",
+                "block_bbox": [
+                  174,
+                  734,
+                  436,
+                  772
+                ],
+                "block_id": 5,
+                "block_order": 3,
+                "group_id": 5,
+                "block_polygon_points": [
+                  [
+                    435,
+                    734
+                  ],
+                  [
+                    405,
+                    734
+                  ],
+                  [
+                    325,
+                    741
+                  ],
+                  [
+                    250,
+                    747
+                  ],
+                  [
+                    174,
+                    753
+                  ],
+                  [
+                    174,
+                    771
+                  ],
+                  [
+                    240,
+                    771
+                  ],
+                  [
+                    316,
+                    765
+                  ],
+                  [
+                    404,
+                    759
+                  ],
+                  [
+                    435,
+                    752
+                  ]
+                ]
+              },
+              {
+                "block_label": "aside_text",
+                "block_content": "111",
+                "block_bbox": [
+                  113,
+                  975,
+                  127,
+                  1067
+                ],
+                "block_id": 6,
+                "block_order": null,
+                "group_id": 6,
+                "block_polygon_points": [
+                  [
+                    113,
+                    975
+                  ],
+                  [
+                    126,
+                    975
+                  ],
+                  [
+                    126,
+                    1066
+                  ],
+                  [
+                    113,
+                    1066
+                  ]
+                ]
+              }
+            ],
+            "layout_det_res": {
+              "boxes": [
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.7095327377319336,
+                  "coordinate": [
+                    68,
+                    72,
+                    551,
+                    113
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      68,
+                      72
+                    ],
+                    [
+                      551,
+                      72
+                    ],
+                    [
+                      551,
+                      113
+                    ],
+                    [
+                      68,
+                      113
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 21,
+                  "label": "table",
+                  "score": 0.3472561836242676,
+                  "coordinate": [
+                    148,
+                    272,
+                    753,
+                    390
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      148.0001220703125,
+                      278.9999694824219
+                    ],
+                    [
+                      749.2875366210938,
+                      256.0208435058594
+                    ],
+                    [
+                      753.4983520507812,
+                      366.2038879394531
+                    ],
+                    [
+                      152.2109375,
+                      389.1830139160156
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 21,
+                  "label": "table",
+                  "score": 0.4858618676662445,
+                  "coordinate": [
+                    150,
+                    258,
+                    782,
+                    620
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      150,
+                      258
+                    ],
+                    [
+                      782,
+                      258
+                    ],
+                    [
+                      782,
+                      620
+                    ],
+                    [
+                      150,
+                      620
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 24,
+                  "label": "vision_footnote",
+                  "score": 0.44185739755630493,
+                  "coordinate": [
+                    168,
+                    620,
+                    283,
+                    645
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      166.5303192138672,
+                      628.46337890625
+                    ],
+                    [
+                      281.7694091796875,
+                      617.5623779296875
+                    ],
+                    [
+                      283.7623291015625,
+                      638.630615234375
+                    ],
+                    [
+                      168.52325439453125,
+                      649.5316162109375
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.7328890562057495,
+                  "coordinate": [
+                    173,
+                    607,
+                    772,
+                    688
+                  ],
+                  "order": 1,
+                  "polygon_points": [
+                    [
+                      771,
+                      607
+                    ],
+                    [
+                      370,
+                      632
+                    ],
+                    [
+                      285,
+                      639
+                    ],
+                    [
+                      196,
+                      645
+                    ],
+                    [
+                      173,
+                      651
+                    ],
+                    [
+                      173,
+                      687
+                    ],
+                    [
+                      767,
+                      644
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.7947792410850525,
+                  "coordinate": [
+                    175,
+                    647,
+                    774,
+                    750
+                  ],
+                  "order": 2,
+                  "polygon_points": [
+                    [
+                      773,
+                      654
+                    ],
+                    [
+                      180,
+                      690
+                    ],
+                    [
+                      175,
+                      749
+                    ],
+                    [
+                      765,
+                      707
+                    ],
+                    [
+                      773,
+                      701
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.7104427218437195,
+                  "coordinate": [
+                    174,
+                    734,
+                    436,
+                    772
+                  ],
+                  "order": 3,
+                  "polygon_points": [
+                    [
+                      435,
+                      734
+                    ],
+                    [
+                      405,
+                      734
+                    ],
+                    [
+                      325,
+                      741
+                    ],
+                    [
+                      250,
+                      747
+                    ],
+                    [
+                      174,
+                      753
+                    ],
+                    [
+                      174,
+                      771
+                    ],
+                    [
+                      240,
+                      771
+                    ],
+                    [
+                      316,
+                      765
+                    ],
+                    [
+                      404,
+                      759
+                    ],
+                    [
+                      435,
+                      752
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 2,
+                  "label": "aside_text",
+                  "score": 0.3047414720058441,
+                  "coordinate": [
+                    113,
+                    975,
+                    127,
+                    1067
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      113,
+                      975
+                    ],
+                    [
+                      126,
+                      975
+                    ],
+                    [
+                      126,
+                      1066
+                    ],
+                    [
+                      113,
+                      1066
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "markdown": {
+            "text": "\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td colspan=\"4\">Tel:</td></tr><tr><td colspan=\"3\"></td><td style='text-align: center; word-wrap: break-word;'>ID No:</td></tr><tr><td colspan=\"2\">Patient:</td><td style='text-align: center; word-wrap: break-word;'>Age:</td><td style='text-align: center; word-wrap: break-word;'>Date: 22-Sep-23</td></tr><tr><td colspan=\"2\">Diagnosis:</td><td style='text-align: center; word-wrap: break-word;'>Inflammatory Polyarthropathy (2012, Intermittent Arthritis-Ist Episode in 2012, Remission-2014-2022, Recent Episode since March 2023, B/L Secondary Knee OA, H/O Hysterectomy-2016.)</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Job/Job</td><td style='text-align: center; word-wrap: break-word;'>FOLITRAX (oral)\n(Methotrexate 10 mg)</td><td style='text-align: center; word-wrap: break-word;'>one tablet once in a week e.g every Sunday</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Tab</td><td style='text-align: center; word-wrap: break-word;'>FOLVITE (oral)\n(Folic Acid 5 mg)</td><td style='text-align: center; word-wrap: break-word;'>alternate day, avoid on methotrexate day</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Tab</td><td style='text-align: center; word-wrap: break-word;'>TRITONIB (oral)\n(Tofacitinib 5 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 (breakfast) (lunch) (dinner)</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Tab</td><td style='text-align: center; word-wrap: break-word;'>RETOZ (oral)\n(Etoricoxib 60 mg)</td><td style='text-align: center; word-wrap: break-word;'>0 (breakfast) (lunch) (dinner)</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Tab</td><td style='text-align: center; word-wrap: break-word;'>PANTADIF (oral)\n(Pantoprazole 40 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 (breakfast) (lunch) (dinner)</td><td style='text-align: center; word-wrap: break-word;'>22-Sep-23 to 19-Dec-23</td></tr><tr><td colspan=\"2\"></td><td style='text-align: center; word-wrap: break-word;'>Empty stomach</td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>\n\nRecommendations:\n\n1. Physical exercises, as explained by physiotherapist, in addition to daily walk, swimming or gymnastics for at least 30 minutes\n\n2. Repeat ESR, CRP, Hb, TLC, DLC, Platelets, SGPT, S.Creatinine, S. Cholesterol, Blood Sugar Random and Urine routine after 3 months (a week before the next follow-up review). The report must be signed by a MD qualified Pathologist with the Doctor's name and qualification clearly printed on it.\n\nFollowup: on 19/12/2023 with prior appointment.",
+            "images": {}
+          },
+          "outputImages": {
+            "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2f6f1fa0-1f71-4343-a3dc-476a893d593f/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T20%3A48%3A45Z%2F-1%2F%2F1d5b1e9dd14133a03e776e309256bbccdb7185f5c4122e50772c11a1b73e3cf8"
+          },
+          "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2f6f1fa0-1f71-4343-a3dc-476a893d593f/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T20%3A48%3A46Z%2F-1%2F%2F4f79b6a22a52f75419d035f72eec96844f9dedbd7de17d895f05d6081498ab2c"
+        }
+      ],
+      "dataInfo": {
+        "width": 893,
+        "height": 1263,
+        "type": "image"
+      },
+      "preprocessedImages": [
+        "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2f6f1fa0-1f71-4343-a3dc-476a893d593f/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T20%3A48%3A46Z%2F-1%2F%2F410ea7a2d0d8d19cd0564b2a536cd108b55a5de338374a2f80e37d9fd8f6da6e"
+      ]
+    },
+    "errorCode": 0,
+    "errorMsg": "Success"
+  },
+  "page_007": {
+    "logId": "1268d104-415f-4513-a41d-ea67d2d54b74",
+    "result": {
+      "layoutParsingResults": [
+        {
+          "prunedResult": {
+            "page_count": null,
+            "width": 893,
+            "height": 1263,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_layout_detection": true,
+              "use_chart_recognition": false,
+              "use_seal_recognition": false,
+              "use_ocr_for_image_block": false,
+              "format_block_content": false,
+              "merge_layout_blocks": true,
+              "markdown_ignore_labels": [
+                "number",
+                "footnote",
+                "header",
+                "header_image",
+                "footer",
+                "footer_image",
+                "aside_text"
+              ],
+              "return_layout_polygon_points": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "header",
+                "block_content": "prescription_007.png — Prescription\nSource: ekacare/medical_records_parsing_validation_set / test / row 29",
+                "block_bbox": [
+                  69,
+                  74,
+                  552,
+                  112
+                ],
+                "block_id": 0,
+                "block_order": null,
+                "group_id": 0,
+                "block_polygon_points": [
+                  [
+                    69,
+                    74
+                  ],
+                  [
+                    552,
+                    74
+                  ],
+                  [
+                    552,
+                    112
+                  ],
+                  [
+                    69,
+                    112
+                  ]
+                ]
+              },
+              {
+                "block_label": "table",
+                "block_content": "<table><tr><td>Reg. No.</td><td>Date: 14-06-2018</td></tr><tr><td>Name:</td><td></td></tr><tr><td>Diagnosis: FIXED DRUG ERuption</td><td></td></tr><tr><td>Rx</td><td></td></tr><tr><td>1. ARROW 500 MG TAB</td><td>3 days</td></tr><tr><td>Itab once a day</td><td></td></tr><tr><td>2. OMNACORTH 10 MG TAB</td><td>8 days</td></tr><tr><td>Itab twice a day</td><td></td></tr><tr><td>3. MFSONE CREAM</td><td>8 days</td></tr><tr><td>apply twice a day</td><td></td></tr><tr><td colspan=\"2\">Follow up on: 21-06-2018</td></tr><tr><td>Avoid: Norepinephrine</td><td>10 days</td></tr></table>",
+                "block_bbox": [
+                  250,
+                  350,
+                  804,
+                  838
+                ],
+                "block_id": 1,
+                "block_order": null,
+                "group_id": 1,
+                "block_polygon_points": [
+                  [
+                    250,
+                    350
+                  ],
+                  [
+                    804,
+                    350
+                  ],
+                  [
+                    804,
+                    838
+                  ],
+                  [
+                    250,
+                    838
+                  ]
+                ]
+              }
+            ],
+            "layout_det_res": {
+              "boxes": [
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.8483995199203491,
+                  "coordinate": [
+                    69,
+                    74,
+                    552,
+                    112
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      69,
+                      74
+                    ],
+                    [
+                      552,
+                      74
+                    ],
+                    [
+                      552,
+                      112
+                    ],
+                    [
+                      69,
+                      112
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 21,
+                  "label": "table",
+                  "score": 0.6357717514038086,
+                  "coordinate": [
+                    250,
+                    350,
+                    804,
+                    838
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      250,
+                      350
+                    ],
+                    [
+                      804,
+                      350
+                    ],
+                    [
+                      804,
+                      838
+                    ],
+                    [
+                      250,
+                      838
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "markdown": {
+            "text": "\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Reg. No.</td><td style='text-align: center; word-wrap: break-word;'>Date: 14-06-2018</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Name:</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Diagnosis: FIXED DRUG ERuption</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Rx</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1. ARROW 500 MG TAB</td><td style='text-align: center; word-wrap: break-word;'>3 days</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Itab once a day</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2. OMNACORTH 10 MG TAB</td><td style='text-align: center; word-wrap: break-word;'>8 days</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Itab twice a day</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3. MFSONE CREAM</td><td style='text-align: center; word-wrap: break-word;'>8 days</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>apply twice a day</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td colspan=\"2\">Follow up on: 21-06-2018</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Avoid: Norepinephrine</td><td style='text-align: center; word-wrap: break-word;'>10 days</td></tr></table>",
+            "images": {}
+          },
+          "outputImages": {
+            "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1268d104-415f-4513-a41d-ea67d2d54b74/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A00%3A09Z%2F-1%2F%2Fd8a2eede37f3af6838efd954494c55134f295b935ed28017e6f0ea6face778d0"
+          },
+          "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1268d104-415f-4513-a41d-ea67d2d54b74/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A00%3A09Z%2F-1%2F%2F58d416124fa116c64bf1449c4d29346f150f602cfeb2bec1c6193fae7aa8b090"
+        }
+      ],
+      "dataInfo": {
+        "width": 893,
+        "height": 1263,
+        "type": "image"
+      },
+      "preprocessedImages": [
+        "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//1268d104-415f-4513-a41d-ea67d2d54b74/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A00%3A10Z%2F-1%2F%2Fccfc9244385bc43244a88f605854872fe20718f9720675d374e52073b6710951"
+      ]
+    },
+    "errorCode": 0,
+    "errorMsg": "Success"
+  },
+  "page_015": {
+    "logId": "df32b2d9-f752-4ff7-ae0d-b37d68ec41ba",
+    "result": {
+      "layoutParsingResults": [
+        {
+          "prunedResult": {
+            "page_count": null,
+            "width": 893,
+            "height": 1263,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_layout_detection": true,
+              "use_chart_recognition": false,
+              "use_seal_recognition": false,
+              "use_ocr_for_image_block": false,
+              "format_block_content": false,
+              "merge_layout_blocks": true,
+              "markdown_ignore_labels": [
+                "number",
+                "footnote",
+                "header",
+                "header_image",
+                "footer",
+                "footer_image",
+                "aside_text"
+              ],
+              "return_layout_polygon_points": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "header",
+                "block_content": "prescription_015.png — Prescription\nSource: ekacare/medical_records_parsing_validation_set / test / row 60",
+                "block_bbox": [
+                  69,
+                  74,
+                  551,
+                  111
+                ],
+                "block_id": 0,
+                "block_order": null,
+                "group_id": 0,
+                "block_polygon_points": [
+                  [
+                    69,
+                    74
+                  ],
+                  [
+                    551,
+                    74
+                  ],
+                  [
+                    551,
+                    111
+                  ],
+                  [
+                    69,
+                    111
+                  ]
+                ]
+              },
+              {
+                "block_label": "image",
+                "block_content": "",
+                "block_bbox": [
+                  130,
+                  128,
+                  357,
+                  182
+                ],
+                "block_id": 1,
+                "block_order": null,
+                "group_id": 1,
+                "block_polygon_points": [
+                  [
+                    130,
+                    128
+                  ],
+                  [
+                    357,
+                    128
+                  ],
+                  [
+                    357,
+                    182
+                  ],
+                  [
+                    130,
+                    182
+                  ]
+                ]
+              },
+              {
+                "block_label": "figure_title",
+                "block_content": "OUTPATIENT RECORD",
+                "block_bbox": [
+                  353,
+                  225,
+                  539,
+                  244
+                ],
+                "block_id": 2,
+                "block_order": null,
+                "group_id": 2,
+                "block_polygon_points": [
+                  [
+                    353,
+                    225
+                  ],
+                  [
+                    538,
+                    225
+                  ],
+                  [
+                    538,
+                    243
+                  ],
+                  [
+                    353,
+                    243
+                  ]
+                ]
+              },
+              {
+                "block_label": "table",
+                "block_content": "<table><tr><td>Hospital No:</td><td>Visit No:</td></tr><tr><td>Name:</td><td>Age/Sex:</td></tr><tr><td>Doctor Name:</td><td>Specialty:</td></tr><tr><td colspan=\"2\">Date: 09/07/2022 12:00PM</td></tr><tr><td colspan=\"2\">Allergies</td></tr><tr><td colspan=\"2\">Allergen: Nil known</td></tr><tr><td colspan=\"2\">Diagnosis</td></tr><tr><td colspan=\"2\">Provisional Diagnosis : Type 2 diabetes mellitus</td></tr><tr><td colspan=\"2\">Diagnosis</td></tr><tr><td colspan=\"2\">Provisional Diagnosis : Type 2 diabetes mellitus</td></tr><tr><td colspan=\"2\">Progress Notes :</td></tr><tr><td colspan=\"2\">Diabetes with nephropathy</td></tr><tr><td colspan=\"2\">Hb-12.6</td></tr><tr><td colspan=\"2\">Cr-1.94</td></tr><tr><td colspan=\"2\">Ca-8.7</td></tr><tr><td colspan=\"2\">Adv:</td></tr><tr><td colspan=\"2\">Renal diet/Avoid Painkillers of required can take Paracetamol</td></tr><tr><td colspan=\"2\">TAB UROTOR 20 MG 1--0--0</td></tr><tr><td colspan=\"2\">TAB RAPILIF 4 MG 0---0---1</td></tr><tr><td colspan=\"2\">TAB NEXOVAS-M(10/40 MG) 0---1---0</td></tr><tr><td colspan=\"2\">TAB SOBISIS-FORTE 0---0---1</td></tr><tr><td colspan=\"2\">TAB ZYLORIC 100 MG 0---0---1</td></tr><tr><td colspan=\"2\">TAB RENOLOG 2---0---2</td></tr><tr><td colspan=\"2\">CAP NEXIFLORA FORTE 1---0---0</td></tr><tr><td colspan=\"2\">FOR ONE MONTH</td></tr><tr><td colspan=\"2\">FOLLOW UP AFTER ONE MONTH WITH FOLLOWING</td></tr><tr><td colspan=\"2\">CBC</td></tr><tr><td colspan=\"2\">SERUM CREATININE ELECTROLYTES</td></tr><tr><td colspan=\"2\">URINE ROUTINE EXAM,URINARY ALBUMIN:CREATININE RATIO</td></tr></table>",
+                "block_bbox": [
+                  131,
+                  242,
+                  760,
+                  772
+                ],
+                "block_id": 3,
+                "block_order": null,
+                "group_id": 3,
+                "block_polygon_points": [
+                  [
+                    131,
+                    242
+                  ],
+                  [
+                    760,
+                    242
+                  ],
+                  [
+                    760,
+                    772
+                  ],
+                  [
+                    131,
+                    772
+                  ]
+                ]
+              },
+              {
+                "block_label": "number",
+                "block_content": "1 of 1",
+                "block_bbox": [
+                  735,
+                  975,
+                  761,
+                  987
+                ],
+                "block_id": 4,
+                "block_order": null,
+                "group_id": 4,
+                "block_polygon_points": [
+                  [
+                    735,
+                    975
+                  ],
+                  [
+                    760,
+                    975
+                  ],
+                  [
+                    760,
+                    986
+                  ],
+                  [
+                    735,
+                    986
+                  ]
+                ]
+              },
+              {
+                "block_label": "footer",
+                "block_content": "CIN: Regd.",
+                "block_bbox": [
+                  141,
+                  1034,
+                  177,
+                  1065
+                ],
+                "block_id": 5,
+                "block_order": null,
+                "group_id": 5,
+                "block_polygon_points": [
+                  [
+                    141,
+                    1034
+                  ],
+                  [
+                    176,
+                    1034
+                  ],
+                  [
+                    176,
+                    1064
+                  ],
+                  [
+                    141,
+                    1064
+                  ]
+                ]
+              }
+            ],
+            "layout_det_res": {
+              "boxes": [
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.5990805625915527,
+                  "coordinate": [
+                    69,
+                    74,
+                    551,
+                    111
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      69,
+                      74
+                    ],
+                    [
+                      551,
+                      74
+                    ],
+                    [
+                      551,
+                      111
+                    ],
+                    [
+                      69,
+                      111
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 14,
+                  "label": "image",
+                  "score": 0.31278061866760254,
+                  "coordinate": [
+                    130,
+                    128,
+                    357,
+                    182
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      130,
+                      128
+                    ],
+                    [
+                      357,
+                      128
+                    ],
+                    [
+                      357,
+                      182
+                    ],
+                    [
+                      130,
+                      182
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 7,
+                  "label": "figure_title",
+                  "score": 0.6679019927978516,
+                  "coordinate": [
+                    353,
+                    225,
+                    539,
+                    244
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      353,
+                      225
+                    ],
+                    [
+                      538,
+                      225
+                    ],
+                    [
+                      538,
+                      243
+                    ],
+                    [
+                      353,
+                      243
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 21,
+                  "label": "table",
+                  "score": 0.9319330453872681,
+                  "coordinate": [
+                    131,
+                    242,
+                    760,
+                    772
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      131,
+                      242
+                    ],
+                    [
+                      760,
+                      242
+                    ],
+                    [
+                      760,
+                      772
+                    ],
+                    [
+                      131,
+                      772
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 16,
+                  "label": "number",
+                  "score": 0.6816350221633911,
+                  "coordinate": [
+                    735,
+                    975,
+                    761,
+                    987
+                  ],
+                  "order": 1,
+                  "polygon_points": [
+                    [
+                      735,
+                      975
+                    ],
+                    [
+                      760,
+                      975
+                    ],
+                    [
+                      760,
+                      986
+                    ],
+                    [
+                      735,
+                      986
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 8,
+                  "label": "footer",
+                  "score": 0.3960898518562317,
+                  "coordinate": [
+                    141,
+                    1034,
+                    177,
+                    1065
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      141,
+                      1034
+                    ],
+                    [
+                      176,
+                      1034
+                    ],
+                    [
+                      176,
+                      1064
+                    ],
+                    [
+                      141,
+                      1064
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "markdown": {
+            "text": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_130_128_357_182.jpg\" alt=\"Image\" width=\"25%\" /></div>\n\n\n<div style=\"text-align: center;\">OUTPATIENT RECORD</div>\n\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Hospital No:</td><td style='text-align: center; word-wrap: break-word;'>Visit No:</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Name:</td><td style='text-align: center; word-wrap: break-word;'>Age/Sex:</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Doctor Name:</td><td style='text-align: center; word-wrap: break-word;'>Specialty:</td></tr><tr><td colspan=\"2\">Date: 09/07/2022 12:00PM</td></tr><tr><td colspan=\"2\">Allergies</td></tr><tr><td colspan=\"2\">Allergen: Nil known</td></tr><tr><td colspan=\"2\">Diagnosis</td></tr><tr><td colspan=\"2\">Provisional Diagnosis : Type 2 diabetes mellitus</td></tr><tr><td colspan=\"2\">Diagnosis</td></tr><tr><td colspan=\"2\">Provisional Diagnosis : Type 2 diabetes mellitus</td></tr><tr><td colspan=\"2\">Progress Notes :</td></tr><tr><td colspan=\"2\">Diabetes with nephropathy</td></tr><tr><td colspan=\"2\">Hb-12.6</td></tr><tr><td colspan=\"2\">Cr-1.94</td></tr><tr><td colspan=\"2\">Ca-8.7</td></tr><tr><td colspan=\"2\">Adv:</td></tr><tr><td colspan=\"2\">Renal diet/Avoid Painkillers of required can take Paracetamol</td></tr><tr><td colspan=\"2\">TAB UROTOR 20 MG 1--0--0</td></tr><tr><td colspan=\"2\">TAB RAPILIF 4 MG 0---0---1</td></tr><tr><td colspan=\"2\">TAB NEXOVAS-M(10/40 MG) 0---1---0</td></tr><tr><td colspan=\"2\">TAB SOBISIS-FORTE 0---0---1</td></tr><tr><td colspan=\"2\">TAB ZYLORIC 100 MG 0---0---1</td></tr><tr><td colspan=\"2\">TAB RENOLOG 2---0---2</td></tr><tr><td colspan=\"2\">CAP NEXIFLORA FORTE 1---0---0</td></tr><tr><td colspan=\"2\">FOR ONE MONTH</td></tr><tr><td colspan=\"2\">FOLLOW UP AFTER ONE MONTH WITH FOLLOWING</td></tr><tr><td colspan=\"2\">CBC</td></tr><tr><td colspan=\"2\">SERUM CREATININE ELECTROLYTES</td></tr><tr><td colspan=\"2\">URINE ROUTINE EXAM,URINARY ALBUMIN:CREATININE RATIO</td></tr></table>",
+            "images": {
+              "imgs/img_in_image_box_130_128_357_182.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//df32b2d9-f752-4ff7-ae0d-b37d68ec41ba/markdown_0/imgs/img_in_image_box_130_128_357_182.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A01%3A42Z%2F-1%2F%2Fe6beb3258fe77fe046d2337e98b8e58aca34f056f8ed0c380aaf8c25fa485121"
+            }
+          },
+          "outputImages": {
+            "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//df32b2d9-f752-4ff7-ae0d-b37d68ec41ba/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A01%3A42Z%2F-1%2F%2F55d6a66d39693e2ee93d63cdd0ea83bfdb0f7467917d21cf2ed3997972fd6bc8"
+          },
+          "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//df32b2d9-f752-4ff7-ae0d-b37d68ec41ba/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A01%3A43Z%2F-1%2F%2Fe4fec74b8753db78c11e995ec7e498a0bb23eefee41fbfbd7173fc0f747c7d3a"
+        }
+      ],
+      "dataInfo": {
+        "width": 893,
+        "height": 1263,
+        "type": "image"
+      },
+      "preprocessedImages": [
+        "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//df32b2d9-f752-4ff7-ae0d-b37d68ec41ba/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A01%3A43Z%2F-1%2F%2F9db3b1283f959d1c0cbb6838805bb1802a632142000f19b4657da2d55160f62d"
+      ]
+    },
+    "errorCode": 0,
+    "errorMsg": "Success"
+  },
+  "page_026": {
+    "logId": "45466e18-01f7-463f-ae4d-8a02fb16dcd3",
+    "result": {
+      "layoutParsingResults": [
+        {
+          "prunedResult": {
+            "page_count": null,
+            "width": 893,
+            "height": 1263,
+            "model_settings": {
+              "use_doc_preprocessor": false,
+              "use_layout_detection": true,
+              "use_chart_recognition": false,
+              "use_seal_recognition": false,
+              "use_ocr_for_image_block": false,
+              "format_block_content": false,
+              "merge_layout_blocks": true,
+              "markdown_ignore_labels": [
+                "number",
+                "footnote",
+                "header",
+                "header_image",
+                "footer",
+                "footer_image",
+                "aside_text"
+              ],
+              "return_layout_polygon_points": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "header",
+                "block_content": "prescription_026.png — Prescription\nSource: ekacare/medical_records_parsing_validation_set / test / row 108",
+                "block_bbox": [
+                  69,
+                  73,
+                  559,
+                  111
+                ],
+                "block_id": 0,
+                "block_order": null,
+                "group_id": 0,
+                "block_polygon_points": [
+                  [
+                    69,
+                    73
+                  ],
+                  [
+                    559,
+                    73
+                  ],
+                  [
+                    559,
+                    111
+                  ],
+                  [
+                    69,
+                    111
+                  ]
+                ]
+              },
+              {
+                "block_label": "image",
+                "block_content": "",
+                "block_bbox": [
+                  108,
+                  138,
+                  776,
+                  326
+                ],
+                "block_id": 1,
+                "block_order": null,
+                "group_id": 1,
+                "block_polygon_points": [
+                  [
+                    108,
+                    138
+                  ],
+                  [
+                    776,
+                    138
+                  ],
+                  [
+                    776,
+                    326
+                  ],
+                  [
+                    108,
+                    326
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Symptoms: Had hypoglycemia",
+                "block_bbox": [
+                  106,
+                  341,
+                  234,
+                  354
+                ],
+                "block_id": 2,
+                "block_order": 1,
+                "group_id": 2,
+                "block_polygon_points": [
+                  [
+                    106,
+                    341
+                  ],
+                  [
+                    233,
+                    341
+                  ],
+                  [
+                    233,
+                    353
+                  ],
+                  [
+                    106,
+                    353
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Vitals: BP: 150/81 mmHg",
+                "block_bbox": [
+                  106,
+                  360,
+                  214,
+                  373
+                ],
+                "block_id": 3,
+                "block_order": 2,
+                "group_id": 3,
+                "block_polygon_points": [
+                  [
+                    106.00000762939453,
+                    359.9999694824219
+                  ],
+                  [
+                    213,
+                    359.9999694824219
+                  ],
+                  [
+                    213,
+                    371.9999694824219
+                  ],
+                  [
+                    106.00000762939453,
+                    371.9999694824219
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Diagnosis: Diabetes mellitus type 2, HT - Hypertension, Dyslipidemia",
+                "block_bbox": [
+                  106,
+                  379,
+                  390,
+                  393
+                ],
+                "block_id": 4,
+                "block_order": 3,
+                "group_id": 4,
+                "block_polygon_points": [
+                  [
+                    106,
+                    379
+                  ],
+                  [
+                    389,
+                    379
+                  ],
+                  [
+                    389,
+                    392
+                  ],
+                  [
+                    106,
+                    392
+                  ]
+                ]
+              },
+              {
+                "block_label": "table",
+                "block_content": "<table><tr><td>Rx</td><td>Name</td><td>Frequency</td><td>Duration</td><td>Notes</td></tr><tr><td>1</td><td>Tablet Taxloc Beta (40/50)\nTELOMIN(40/40) + METROPOLLO(50 mg)</td><td>1 - 0 - 0</td><td>3 Months</td><td>After Breakfast</td></tr><tr><td>2</td><td>Capsule Cleptitab A (75 &amp; 150)\nCLOMOCOVEL(75 mg) + ATHIN(250 mg)</td><td>0 - 1 - 0</td><td>3 Months</td><td>After Lunch</td></tr><tr><td>3</td><td>Tablet Gemer DS (3 &amp; 1000)\nGLENPHIN(3 mg) + METROMIN(2000 mg)</td><td>1 - 0 - 0</td><td>3 Months</td><td>Before Breakfast</td></tr><tr><td>4</td><td>Tablet Clinipine S\nCLINOPHIL(5 mg)</td><td>0 - 0 - 1</td><td>3 Months</td><td>After Dinner</td></tr><tr><td>5</td><td>Tablet Roseday F 10\nPENCHIRATE(200 mg) + ROSUASATH(10 mg)</td><td>0 - 1 - 0</td><td>3 Months</td><td>After Lunch</td></tr><tr><td>6</td><td>Tablet Vildanex M (50/500)\nVILDANPLITIN 50 MG+METROMIN 500 MG</td><td>1 - 0 - 1</td><td>3 Months</td><td>Before Breakfast, Before Dinner,</td></tr><tr><td>7</td><td>Tablet Glycomet GP1 forte</td><td>1 - 0 - 0</td><td>3 Months</td><td>Before Breakfast</td></tr><tr><td>8</td><td>Tablet Adipiride M1</td><td>0 - 0 - 1</td><td>3 Months</td><td>Before Dinner</td></tr><tr><td>9</td><td>Capsule Evion (400 mg)\nVITAMIN (200 mg)</td><td>1 - 0 - 0</td><td>3 Months</td><td>After Breakfast</td></tr><tr><td>10</td><td>Capsule A to z</td><td>0 - 0 - 1</td><td>3 Months</td><td>After Dinner</td></tr><tr><td>11</td><td>Capsule Nervijnen\nD-PAINEN(50 mg) + CALCIUM PIVENHEOL(25 mg) + POLIC ACO + VITAMIN B2(0.75 mg) + VITAMIN B1(100 mg)</td><td>1 - 0 - 0</td><td>3 Months</td><td>After Breakfast</td></tr></table>",
+                "block_bbox": [
+                  107,
+                  405,
+                  775,
+                  717
+                ],
+                "block_id": 5,
+                "block_order": null,
+                "group_id": 5,
+                "block_polygon_points": [
+                  [
+                    107,
+                    405
+                  ],
+                  [
+                    775,
+                    405
+                  ],
+                  [
+                    775,
+                    717
+                  ],
+                  [
+                    107,
+                    717
+                  ]
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Advised Investigations: FBS- Fasting Blood Sugar, PPBS-Postprandial Blood Sugar Test, HbA1c Test, Lipid Profile Test, Uric Acid, Serum Calcium, CBC - Complete Blood Count",
+                "block_bbox": [
+                  105,
+                  732,
+                  766,
+                  755
+                ],
+                "block_id": 6,
+                "block_order": 4,
+                "group_id": 6,
+                "block_polygon_points": [
+                  [
+                    105,
+                    732
+                  ],
+                  [
+                    766,
+                    732
+                  ],
+                  [
+                    766,
+                    755
+                  ],
+                  [
+                    105,
+                    755
+                  ]
+                ]
+              },
+              {
+                "block_label": "number",
+                "block_content": "1",
+                "block_bbox": [
+                  438,
+                  848,
+                  445,
+                  869
+                ],
+                "block_id": 7,
+                "block_order": null,
+                "group_id": 7,
+                "block_polygon_points": [
+                  [
+                    438,
+                    848
+                  ],
+                  [
+                    444,
+                    848
+                  ],
+                  [
+                    444,
+                    868
+                  ],
+                  [
+                    438,
+                    868
+                  ]
+                ]
+              }
+            ],
+            "layout_det_res": {
+              "boxes": [
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.39913442730903625,
+                  "coordinate": [
+                    69,
+                    74,
+                    330,
+                    92
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      69,
+                      74
+                    ],
+                    [
+                      329,
+                      74
+                    ],
+                    [
+                      329,
+                      91
+                    ],
+                    [
+                      69,
+                      91
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.3908710777759552,
+                  "coordinate": [
+                    69,
+                    73,
+                    559,
+                    111
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      69,
+                      73
+                    ],
+                    [
+                      559,
+                      73
+                    ],
+                    [
+                      559,
+                      111
+                    ],
+                    [
+                      69,
+                      111
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 12,
+                  "label": "header",
+                  "score": 0.37351199984550476,
+                  "coordinate": [
+                    70,
+                    92,
+                    560,
+                    110
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      70,
+                      92
+                    ],
+                    [
+                      70,
+                      109
+                    ],
+                    [
+                      559,
+                      109
+                    ],
+                    [
+                      559,
+                      92
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 14,
+                  "label": "image",
+                  "score": 0.38697561621665955,
+                  "coordinate": [
+                    108,
+                    138,
+                    776,
+                    326
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      108,
+                      138
+                    ],
+                    [
+                      776,
+                      138
+                    ],
+                    [
+                      776,
+                      326
+                    ],
+                    [
+                      108,
+                      326
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.38400760293006897,
+                  "coordinate": [
+                    106,
+                    341,
+                    234,
+                    354
+                  ],
+                  "order": 1,
+                  "polygon_points": [
+                    [
+                      106,
+                      341
+                    ],
+                    [
+                      233,
+                      341
+                    ],
+                    [
+                      233,
+                      353
+                    ],
+                    [
+                      106,
+                      353
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.6547810435295105,
+                  "coordinate": [
+                    106,
+                    360,
+                    214,
+                    373
+                  ],
+                  "order": 2,
+                  "polygon_points": [
+                    [
+                      106.00000762939453,
+                      359.9999694824219
+                    ],
+                    [
+                      213,
+                      359.9999694824219
+                    ],
+                    [
+                      213,
+                      371.9999694824219
+                    ],
+                    [
+                      106.00000762939453,
+                      371.9999694824219
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.6906704306602478,
+                  "coordinate": [
+                    106,
+                    379,
+                    390,
+                    393
+                  ],
+                  "order": 3,
+                  "polygon_points": [
+                    [
+                      106,
+                      379
+                    ],
+                    [
+                      389,
+                      379
+                    ],
+                    [
+                      389,
+                      392
+                    ],
+                    [
+                      106,
+                      392
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 21,
+                  "label": "table",
+                  "score": 0.9651517868041992,
+                  "coordinate": [
+                    107,
+                    405,
+                    775,
+                    717
+                  ],
+                  "order": null,
+                  "polygon_points": [
+                    [
+                      107,
+                      405
+                    ],
+                    [
+                      775,
+                      405
+                    ],
+                    [
+                      775,
+                      717
+                    ],
+                    [
+                      107,
+                      717
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 22,
+                  "label": "text",
+                  "score": 0.6379902362823486,
+                  "coordinate": [
+                    105,
+                    732,
+                    766,
+                    755
+                  ],
+                  "order": 4,
+                  "polygon_points": [
+                    [
+                      105,
+                      732
+                    ],
+                    [
+                      766,
+                      732
+                    ],
+                    [
+                      766,
+                      755
+                    ],
+                    [
+                      105,
+                      755
+                    ]
+                  ]
+                },
+                {
+                  "cls_id": 16,
+                  "label": "number",
+                  "score": 0.3479728698730469,
+                  "coordinate": [
+                    438,
+                    848,
+                    445,
+                    869
+                  ],
+                  "order": 5,
+                  "polygon_points": [
+                    [
+                      438,
+                      848
+                    ],
+                    [
+                      444,
+                      848
+                    ],
+                    [
+                      444,
+                      868
+                    ],
+                    [
+                      438,
+                      868
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "markdown": {
+            "text": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_108_138_776_326.jpg\" alt=\"Image\" width=\"74%\" /></div>\n\n\nSymptoms: Had hypoglycemia\n\nVitals: BP: 150/81 mmHg\n\nDiagnosis: Diabetes mellitus type 2, HT - Hypertension, Dyslipidemia\n\n\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Rx</td><td style='text-align: center; word-wrap: break-word;'>Name</td><td style='text-align: center; word-wrap: break-word;'>Frequency</td><td style='text-align: center; word-wrap: break-word;'>Duration</td><td style='text-align: center; word-wrap: break-word;'>Notes</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>Tablet Taxloc Beta (40/50)\nTELOMIN(40/40) + METROPOLLO(50 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Breakfast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2</td><td style='text-align: center; word-wrap: break-word;'>Capsule Cleptitab A (75 &amp; 150)\nCLOMOCOVEL(75 mg) + ATHIN(250 mg)</td><td style='text-align: center; word-wrap: break-word;'>0 - 1 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Lunch</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3</td><td style='text-align: center; word-wrap: break-word;'>Tablet Gemer DS (3 &amp; 1000)\nGLENPHIN(3 mg) + METROMIN(2000 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>Before Breakfast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>4</td><td style='text-align: center; word-wrap: break-word;'>Tablet Clinipine S\nCLINOPHIL(5 mg)</td><td style='text-align: center; word-wrap: break-word;'>0 - 0 - 1</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Dinner</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>Tablet Roseday F 10\nPENCHIRATE(200 mg) + ROSUASATH(10 mg)</td><td style='text-align: center; word-wrap: break-word;'>0 - 1 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Lunch</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>6</td><td style='text-align: center; word-wrap: break-word;'>Tablet Vildanex M (50/500)\nVILDANPLITIN 50 MG+METROMIN 500 MG</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 1</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>Before Breakfast, Before Dinner,</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>7</td><td style='text-align: center; word-wrap: break-word;'>Tablet Glycomet GP1 forte</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>Before Breakfast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>8</td><td style='text-align: center; word-wrap: break-word;'>Tablet Adipiride M1</td><td style='text-align: center; word-wrap: break-word;'>0 - 0 - 1</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>Before Dinner</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>9</td><td style='text-align: center; word-wrap: break-word;'>Capsule Evion (400 mg)\nVITAMIN (200 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Breakfast</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>10</td><td style='text-align: center; word-wrap: break-word;'>Capsule A to z</td><td style='text-align: center; word-wrap: break-word;'>0 - 0 - 1</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Dinner</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>11</td><td style='text-align: center; word-wrap: break-word;'>Capsule Nervijnen\nD-PAINEN(50 mg) + CALCIUM PIVENHEOL(25 mg) + POLIC ACO + VITAMIN B2(0.75 mg) + VITAMIN B1(100 mg)</td><td style='text-align: center; word-wrap: break-word;'>1 - 0 - 0</td><td style='text-align: center; word-wrap: break-word;'>3 Months</td><td style='text-align: center; word-wrap: break-word;'>After Breakfast</td></tr></table>\n\nAdvised Investigations: FBS- Fasting Blood Sugar, PPBS-Postprandial Blood Sugar Test, HbA1c Test, Lipid Profile Test, Uric Acid, Serum Calcium, CBC - Complete Blood Count",
+            "images": {
+              "imgs/img_in_image_box_108_138_776_326.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//45466e18-01f7-463f-ae4d-8a02fb16dcd3/markdown_0/imgs/img_in_image_box_108_138_776_326.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A03%3A31Z%2F-1%2F%2Fc2c10c9b65a5e3913b4272a5799ea0e86344b01392047ac0b369f478cf98decb"
+            }
+          },
+          "outputImages": {
+            "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//45466e18-01f7-463f-ae4d-8a02fb16dcd3/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A03%3A31Z%2F-1%2F%2Fe28db15f8ac20857b8fb7084d8fc042e58de89b664e26f2ab3beae5053c00438"
+          },
+          "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//45466e18-01f7-463f-ae4d-8a02fb16dcd3/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A03%3A32Z%2F-1%2F%2F880e9d541924e32bf4f4ae526883f1729a5b2784463a05a6db6b66cdd757b785"
+        }
+      ],
+      "dataInfo": {
+        "width": 893,
+        "height": 1263,
+        "type": "image"
+      },
+      "preprocessedImages": [
+        "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//45466e18-01f7-463f-ae4d-8a02fb16dcd3/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-10-23T21%3A03%3A32Z%2F-1%2F%2Fcc1d18f5e84141d5f02a4147133795b6f27e1cf00a99eccde71d66e38f39c8df"
+      ]
+    },
+    "errorCode": 0,
+    "errorMsg": "Success"
+  }
+}
